@@ -1,0 +1,215 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: montserratBold;
+    src: url(Fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: mrEavesModReg;
+    src: url(Fonts/MrEaves/FontsFree-Net-MrEavesXLModOT-Reg.ttf);
+}
+
+@font-face {
+    font-family: openSansSemiBold;
+    src: url(Fonts/OpenSans/static/OpenSans/OpenSans-SemiBold.ttf);
+}
+
+.header {
+    padding: 0.5%;
+    width: 20%;
+    height: 100%;
+    float: left;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.navigation {
+    padding: 2.5%;
+    width: 50%;
+    height: 90%;
+    float: left;
+    display: inline-block;
+    justify-content: space-between;
+    text-align: right;
+    margin-left: 250px;
+}
+
+#backImageProj2 {
+    padding: 5px 5px 2950px 0px;
+    background: url("Images/FloralWallpaper.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    opacity: 85%;
+}
+
+h1 {
+    font-size: 22pt;
+    font-family: montserratBold;
+    background: linear-gradient(-45deg, #418143, #6ccc6f, #6ccc6f, #30b6a9);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: nameAnimation 3s ease-in-out infinite;
+}
+
+@keyframes nameAnimation {
+    0% {
+        background-position: 0px 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0px 50%;
+    }
+}
+
+navText {
+    color: #418143;
+    font-size: 15pt;
+    font-family: montserratBold;
+}
+
+bodyText {
+    font-family: mrEavesModReg;
+}
+
+line {
+    color: #418143;
+    font-size: 17pt;
+    font-family: montserratBold;
+}
+
+a:link {
+    color: #418143;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #418143;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6ccc6f;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #30b6a9;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.projPageImagesContainer {
+    display: block;
+    width: 475px;
+    height: 271px;
+    opacity: 100%;
+    float: left;
+    display: inline-block;
+    background-color: #91bd92;
+}
+
+
+.projPageImages {
+    opacity: 100%;
+}
+
+.projPageImagesContainer:hover::before {
+    opacity: 100%;
+}
+
+.projPageImagesContainer:hover .projPageImages {
+    opacity: 60%;
+}
+
+.projPageImagesContainer:hover .viewButton {
+    opacity: 100%;
+}
+
+.projPageImagesContainer:hover .projectBrief {
+    opacity: 100%;
+}
+
+.viewButton {
+    background-color: #418143;
+    border: #639565;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 170px;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: openSansSemiBold;
+    font-size: 13px;
+    opacity: 0%
+}
+
+.viewButton:hover {
+    background-color: rgb(84, 198, 129);
+    text-decoration: underline;
+}
+
+
+.viewButton:active {
+    background-color: #30b6a9;
+}
+
+.projectBrief {
+    /* padding: 12px 30px; */
+    text-align: left;
+    /* text-decoration: none; */
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 40px;
+    position: absolute;
+    border-radius: 8px;
+    font-family: mrEavesModReg;
+    font-size: 16px;
+    opacity: 0%;
+    width: 200px;
+    line-height: 1.6;
+}
+
+.animatedBorder {
+    position: absolute;
+    display: block;
+    margin-left: -5px;
+    margin-top: -5px;
+    z-index: -1;
+    height: 281px;
+    width: 485px;
+    background: linear-gradient(to left, #fff 20%, #0bc364 40%, #91bd92 50%, #91bd92 55%, #0bc364 70%, #fff 100%);
+    background-size: 200% auto;
+    animation: gradiant 3s linear infinite;
+    opacity: 70%;
+}
+
+@keyframes gradiant {
+    to {
+        background-position: 170% center;
+    }
+}
+
+.skipToContainer {
+    width: 235px;
+    height: 165px;
+    z-index: -1;
+    opacity: 100%;
+    background-color: #e9f9ea;
+}
